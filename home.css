@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color:#FF99CC;
+}
+
+@media only screen and (min-width: 600px){
+
+.title {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 150px 1fr 150px;
+  align-items: center;
+  padding: 23px 0;
+  text-align: center;
+}
+/* title grid */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.heading {
+  padding-top: 15%;
+  color:#FF99CC;
+  font-family:'Birthstone', cursive;
+  font-size: 305%;
+}
+.container{
+  display: grid;
+  grid-template-rows: 75vh;
+  grid-template-columns: 2fr;
+  align-items: center;
+}
+
+/*  */
+.main {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  font-size: 20px;
+  padding-top: 80px;
+
+}
+
+.main p {
+
+  margin: 0;
+  font-size: 25px;
+  color: black;
+  line-height: 3;
+}
+
+
+/* navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #FF99CC;
+  color: #fff;
+}
+
+.active {
+  background-color: #FF99CC;
+  color: white;
+}
+}
+
+
+@media only screen and (max-width: 599px){
+  .title {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: ;
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .heading{
+    font-size: 200%;
+    padding-bottom: 1%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li a,
+  .dropbtn {
+    font-size: 110%;
+    box-shadow: rgb(204, 219, 232) 1.5px 1px 3px 0px inset, rgba(255, 255, 255, 0.2) -3px -3px 6px 1px inset;
+    display: inline-block;
+    text-decoration: none;
+    color: #FF99CC;
+    border:2px solid #FF99CC;
+    border-radius:5px;
+    height: 20px;
+    width:50%;
+    padding: 2% 50px;
+    margin: 2% 10%;
+  }
+
+  .resp{
+    display: none;
+  }
+
+  .img1{
+    display: none;
+  }
+}
